@@ -40,5 +40,38 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="123.68815592203899"/>
         </scene>
+        <!--Other View Controller-->
+        <scene sceneID="Gf0-zw-edh">
+            <objects>
+                <viewController storyboardIdentifier="ViewOthers" id="DQk-1M-V5b" customClass="OtherViewController" customModule="Force_Touch_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HC3-tt-sFW"/>
+                        <viewControllerLayoutGuide type="bottom" id="988-P9-5XE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lsQ-6r-AbU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opened from Home Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-Ko-abl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0DC-OX-lY1"/>
+                                    <constraint firstAttribute="width" constant="230" id="Tal-Ga-VYp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BWm-Ko-abl" firstAttribute="centerY" secondItem="lsQ-6r-AbU" secondAttribute="centerY" id="Ak0-L9-o2e"/>
+                            <constraint firstItem="BWm-Ko-abl" firstAttribute="centerX" secondItem="lsQ-6r-AbU" secondAttribute="centerX" id="y1I-GC-J4h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jmx-Sf-97w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088.8" y="123.68815592203899"/>
+        </scene>
     </scenes>
 </document>

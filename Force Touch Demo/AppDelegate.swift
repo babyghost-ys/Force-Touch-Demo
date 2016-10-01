@@ -42,5 +42,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    //Peforming Quick Actions
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        completionHandler(handleQuickAction(shortcutItem: shortcutItem))
+    }
+    
+    enum Shortcut: String {
+        case openOthers = "openOthers"
+        case openDetail = "openDetail"
+    }
+    
+    func handleQuickAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        
+        var quickActionHandled = false
+        let type = shortcutItem.type.components(separatedBy: ".").last!
+        if let shortcutType = Shortcut.init(rawValue: type) {
+            switch shortcutType {
+            case .openOthers:
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let controller = storyboard.instantiateViewController(withIdentifier: "ViewOthers") as! OtherViewController
+                self.window?.rootViewController?.present(controller, animated: true, completion: nil)
+                quickActionHandled = true
+
+            default:
+                break
+            }
+
+        }
+        
+        return quickActionHandled
+    }
 }
 

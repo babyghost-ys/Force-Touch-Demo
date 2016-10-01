@@ -64,9 +64,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let controller = storyboard.instantiateViewController(withIdentifier: "ViewOthers") as! OtherViewController
                 self.window?.rootViewController?.present(controller, animated: true, completion: nil)
                 quickActionHandled = true
-
-            default:
-                break
+            case .openDetail:
+                if let tabVC = self.window?.rootViewController as? UITabBarController {
+                    tabVC.selectedIndex = 1
+                    
+                }
             }
 
         }

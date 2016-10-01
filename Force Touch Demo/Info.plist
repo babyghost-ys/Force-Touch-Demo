@@ -2,6 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).openOthers</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>3D Touch or Force Touch</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Click to open a specific Controller</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>beer</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).openDetail</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>iPhone 7 here😙</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Put more things here</string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).openNothing</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Only the required items are here</string>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
